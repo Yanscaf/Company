@@ -80,6 +80,7 @@ body {
 	--color-white: #fff;
 	--color-grey: #838383;
 	--color-dark: #1D1D1F;
+	--offset: 190px; 
 }
 
 /* ============================================================================================================================================= */
@@ -169,8 +170,10 @@ body {
 	block-size: cover;
 	background-repeat: no-repeat;
 
-	min-height: 800px;
+	min-height: 900px;
 	height: 100vh;
+
+	padding-bottom: 40px;
 
 	padding-top: calc(120px + 150px);
 }
@@ -220,9 +223,9 @@ body {
 	grid-template-columns: repeat(2, 1fr);
 	column-gap: 60px;
 
-	padding-top: 190px;
+	padding-top: var(--offset);
 
-	margin-bottom: 190px;
+	margin-bottom: var(--offset);
 }
 
 .about__list {}
@@ -282,7 +285,7 @@ body {
 	height: 630px;
 	overflow: hidden;
 
-	margin-bottom: 190px;
+	margin-bottom: var(--offset);
 }
 
 .about__video video {
@@ -315,7 +318,7 @@ body {
 }
 
 .portfolio {
-	padding-bottom: 190px;
+	padding-bottom: var(--offset);
 }
 
 .visually__hiden {
@@ -388,7 +391,7 @@ body {
 }
 
 .quote {
-	padding-bottom: 190px;
+	padding-bottom: var(--offset);
 }
 
 .qoute__tittle {
@@ -429,14 +432,14 @@ body {
 }
 
 .services {
-	padding-bottom: 190px;
+	padding-bottom: var(--offset);
 }
 
 .services__image {
 	width: 100%;
 	height: 900px;
 	object-fit: cover;
-	padding-bottom: 190px;
+	padding-bottom: var(--offset);
 }
 
 .services__list {}
